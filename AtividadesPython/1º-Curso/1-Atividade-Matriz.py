@@ -1,8 +1,11 @@
-# Fazer um programa para ler um número inteiro N (máximo = 10) e
-# uma matriz quadrada de ordem N
-# contendo números inteiros.
-# Em seguida, mostrar a diagonal principal e a
-# de valores negativos da matriz.
+"""
+ Fazer um programa para ler um número inteiro N (máximo = 10) e
+ uma matriz quadrada de ordem N
+ contendo números inteiros.
+ Em seguida, mostrar a diagonal principal e a
+ de valores negativos da matriz.
+
+"""
 
 N = int(input('Qual será a ordem da matriz? ፡ '))
 while N > 10:

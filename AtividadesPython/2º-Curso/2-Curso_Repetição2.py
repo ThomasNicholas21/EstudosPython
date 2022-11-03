@@ -4,8 +4,6 @@
 # Salário: maior que zero;
 # Sexo: 'f' ou 'm';
 # Estado Civil: 's', 'c', 'v', 'd';
-# codigo ineficiente
-
 
 while True:
     nome = input('Insira seu nome:')

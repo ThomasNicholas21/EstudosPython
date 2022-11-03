@@ -1,7 +1,9 @@
-# Fazer um programa para ler três números inteiros.
-# Em seguida, mostrar qual o menor dentre os três
-# números lidos. Em caso de empate, mostrar apenas uma vez.
+"""
+ Fazer um programa para ler três números inteiros.
+ Em seguida, mostrar qual o menor dentre os três
+ números lidos. Em caso de empate, mostrar apenas uma vez.
 
+"""
 a = int(input('Insira o primeiro valor:'))
 b = int(input('Insira o segundo valor:'))
 c = int(input('Insira o terceiro valor:'))
