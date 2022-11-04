@@ -12,7 +12,7 @@ while True:
 
         tl += int(n_cpf[x]) * rev
 
-        print(n_cpf[x], x, rev)  # Demonstration of calculation
+        print(n_cpf[x], x, rev)  # Demonstração de calculo
 
         rev -= 1
         if rev < 2:
