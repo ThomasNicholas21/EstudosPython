@@ -5,11 +5,17 @@ Calculadora
 while True:
     num1 = input('Digite o primeiro numero: ')
     num2 = input('Digite o segundo numero: ')
+
+    if not num1.isnumeric() or not num2.isnumeric():
+        print('Deve ser digitados numeros!')
+        continue
+
     print("Operadores:       "
           "\n + = soma          "
           "\n - = subtração     "
           "\n / = divisão       "
           "\n * = multiplicação ")
+
     operador = input('Selecione seu operador: ')
 
     if not num1.isnumeric() or not num2.isnumeric():
