@@ -44,7 +44,7 @@ while True:
     else:
         print('Multiplicação = ', num1 * num2)
 
-    sair = input('Deseja sair: [s]im ou [n]ão').lower().startswith('s')
+    sair = input('Deseja sair: [s]im ou [n]ão : ').lower().startswith('s')
 
     if sair is True:
         break
