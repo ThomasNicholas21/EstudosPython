@@ -22,4 +22,4 @@ while True:
         break
     else:
         print(f'Seu nome, {nome.capitalize()}, é muito grande.')
-        break
+        br
