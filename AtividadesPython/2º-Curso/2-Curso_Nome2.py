@@ -15,11 +15,11 @@ while True:
         print('Desculpe, você digitou um número, tente novamente.')
         continue
     elif nome_curto:
-        print(f'Seu nome, {nome}, é curto.')
+        print(f'Seu nome, {nome.capitalize()}, é curto.')
         break
     elif nome_normal:
-        print(f'Seu nome, {nome}, é normal.')
+        print(f'Seu nome, {nome.capitalize()}, é normal.')
         break
     else:
-        print(f'Seu nome, {nome}, é muito grande.')
+        print(f'Seu nome, {nome.capitalize()}, é muito grande.')
         break
