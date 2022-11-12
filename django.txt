@@ -1,0 +1,15 @@
+django-admin.py - tarefas administrativas
+manage.py - delega as tarefas do django-admin.py
+WSGI - Interface de porta de entrada do servidor web, servindo como interface
+setting.py - configura apps, conexao com banco de dados, templates, time zone, cache, seguranca, arquivos estaticos, etc/
+URLS.py - resposavel por gerenciar as rotas URLs
+views.py - processa e retorna uma resposta para o cliente que fez a requisicao
+models.py - dados inteiramente em python, transforma para SQL
+admin.py - interface administrativa gerada automaticamente pelo django, faz leitura dos models e fornece uma interface pronta para manipulacao de dados
+
+django-admin startproject main .
+django-admin startapp core
+python manage.py runserver
+python manage.py createsuperuser --username <nome do usuario>
+python manage.py migrate
+python manage.py makemigrations <nome>

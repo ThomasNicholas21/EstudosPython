@@ -1,0 +1,24 @@
+python revisão
+
+if elif else - condicional
+while : / for x in y : - range(até o numero estabelecido) - repetição
+
+lista = [] - mutaveis
+lista.sort() - ordenação dos elementos
+lista.reverse - inverte os elementos
+
+tupla = () - imutaveis
+
+tupla1 = tuple(lista)
+lista1 = list(tupla)
+
+conjunto = {}
+conjunto.union - junta 2 conjuntos
+conjunto.intersection - mostra a intersecção de 2 conjuntos
+conjunto.difference - a diferença entre os conjuntos
+conjunto.symmetric_difference - mostra diferença simetrica
+conjunto.issubset - verifica se é subconjunto
+conjunto.issuperset - verifica se é superconjunto
+conjunto = set(lista) - conversão
+
+
