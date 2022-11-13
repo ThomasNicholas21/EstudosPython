@@ -20,6 +20,20 @@ while True:
         step_int = int(step)
         start_int = int(start)
 
+        if start_int > stop_int and step_int > 0:
+            print(
+                    '\nA forma deve ser maior que 0.'
+                    '\nTente novamente.'
+                )
+            continue
+
+        elif start_int < stop_int and step_int < 0:
+            print(
+                    '\nA forma deve ser menor que 0.'
+                    '\nTente novamente.'
+                )
+            continue
+
         print(
                 f'Forma selecionada de {step_int} em {step_int}.'
                 f'\nE será contado de {start_int} até {stop_int}.'
@@ -29,7 +43,7 @@ while True:
             print(f'{cont}º número = {i}')
 
     except:
-        print('Deve-se digitar apenas números!')
+        print('\nDeve-se digitar apenas números!')
         continue
     
     sair = input('Deseja sair? [S]im ou [N]ão: ').lower().startswith('s')
