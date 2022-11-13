@@ -34,6 +34,10 @@ while True:
                 )
             continue
 
+        elif step_int == 0:
+            print('\nO passo deve ser maior ou menor que zero.')
+            continue
+
         print(
                 f'Forma selecionada de {step_int} em {step_int}.'
                 f'\nE será contado de {start_int} até {stop_int}.'
