@@ -18,8 +18,9 @@ while True:
         lista.append(valor)
 
     elif opção == 'a':
+        indice = input(f'Qual indice deseja apagar: {lista} : ')
+
         try:
-            indice = input(f'Qual indice deseja apagar: {lista} : ')
             indice_int = int(indice)
             del lista[indice_int]
 
@@ -30,6 +31,7 @@ while True:
             print('\nDigite apenas numeros.')
 
     elif opção == 'l':
+
         if len(lista) == 0:
             print('\nNão a nada para listar')
 
@@ -37,10 +39,11 @@ while True:
             print(i, valor)
     
     else:
+
         print('\nDigite "I", "A" ou "L".')
         continue
 
-    if len(lista) == 5 or len(lista) == 10 or len(lista) == 15:    
+    if len(lista) == 5 or len(lista) == 10 or len(lista) == 15:   
         sair = input('\nDeseja sair? [S]im ou [N]ão : ').lower().startswith('s')
         if sair is True:
             break
