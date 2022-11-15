@@ -2,6 +2,8 @@ Revisão Python
 Operadores lógicos 
 or, and e not
 
+round - arrendondamento 
+
 Condicional
 If, elif e else: 
 
