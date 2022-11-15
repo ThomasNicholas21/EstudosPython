@@ -4,7 +4,7 @@ Lista de compras
 
 lista = []
 while True:
-    print('Lista de Compras')
+    print('*Lista de Compras*')
     opção = input(
                 'Deseja:'
                 '\n[I]nserir'
@@ -31,16 +31,16 @@ while True:
 
     elif opção == 'l':
         if len(lista) == 0:
-            print('Não a nada para listar')
+            print('\nNão a nada para listar')
 
         for i, valor in enumerate(lista):
             print(i, valor)
     
     else:
-        print('Digite "I", "A" ou "L".')
+        print('\nDigite "I", "A" ou "L".')
         continue
 
     if len(lista) == 5 or len(lista) == 10 or len(lista) == 15:    
-        sair = input('Deseja sair? [S]im ou [N]ão : ').lower().startswith('s')
+        sair = input('\nDeseja sair? [S]im ou [N]ão : ').lower().startswith('s')
         if sair is True:
             break
