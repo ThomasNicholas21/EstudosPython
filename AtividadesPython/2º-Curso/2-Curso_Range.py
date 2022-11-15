@@ -2,8 +2,6 @@
 Utilizando o Range
 """
 
-from tracemalloc import start
-
 
 while True:
     start = input('Digite aonde deseja começar a fazer sua contagem: ')
