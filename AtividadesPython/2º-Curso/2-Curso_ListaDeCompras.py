@@ -6,13 +6,13 @@ lista = []
 while True:
     print('*Lista de Compras*')
     opção = input(
-                'Deseja:'
-                '\n[I]nserir'
-                '\n[A]pagar'
-                '\n[L]istar'
-                '\nEscolha: '
-                ).lower()
-            
+        'Deseja:'
+        '\n[I]nserir'
+        '\n[A]pagar'
+        '\n[L]istar'
+        '\nEscolha: '
+    ).lower()
+
     if opção == 'i':
         valor = input('Insira o valor: ')
         lista.append(valor)
@@ -26,7 +26,7 @@ while True:
 
         except IndexError:
             print('\nEsse indice não existe na lista.')
-        
+
         except ValueError:
             print('\nDigite apenas numeros.')
 
@@ -37,13 +37,14 @@ while True:
 
         for i, valor in enumerate(lista):
             print(i, valor)
-    
+
     else:
 
         print('\nDigite "I", "A" ou "L".')
         continue
 
-    if len(lista) == 5 or len(lista) == 10 or len(lista) == 15:   
-        sair = input('\nDeseja sair? [S]im ou [N]ão : ').lower().startswith('s')
+    if len(lista) == 5 or len(lista) == 10 or len(lista) == 15:
+        sair = input(
+            '\nDeseja sair? [S]im ou [N]ão : ').lower().startswith('s')
         if sair is True:
             break
