@@ -1,9 +1,19 @@
 cpf = input('Digite seu CPF: ')
-novo_cpf = cpf[:-2]
+novo_cpf = cpf[:9]
 total_soma = 0
 reverso = 10
 
-for i in range(10):
-    total_soma += int(novo_cpf[i]) * reverso
-    print(novo_cpf[i], reverso, int(novo_cpf[i]) * reverso, total_soma)
+for i in novo_cpf:
+    total_soma += int(i) * reverso
     reverso -= 1
+
+
+multiplicação = total_soma * 10
+print(multiplicação)
+resto_multiplicação = multiplicação % 11
+print(resto_multiplicação)
+
+if resto_multiplicação > 9:
+    print('Resultado é 0')
+else:
+    print('Resultado é o valor da conta.')
