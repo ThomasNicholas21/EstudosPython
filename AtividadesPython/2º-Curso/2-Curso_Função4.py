@@ -3,9 +3,9 @@ Funções
 '''
 
 
-def divisão(n1, n2):
-    return n1 ** n2
+def saudacao(nome):
+    print(f'Olá, {nome}. ')
 
 
-div = divisão(8, 3)
-print(f'{div:.2f}')
+nome = input('Digite seu nome: ')
+saudacao(nome)
