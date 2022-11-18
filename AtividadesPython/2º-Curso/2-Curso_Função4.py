@@ -7,6 +7,10 @@ def soma(a, b):
     return a + b
 
 
+def subtracao(a, b):
+    return a - b
+
+
 def divisao(a, b):
     return a / b
 
@@ -21,5 +25,6 @@ b = int(input('Digite b: '))
 s = soma(a, b)
 d = divisao(a, b)
 m = multiplicacao(a, b)
+sub = subtracao(a, b)
 
-print(f'soma = {s}, divisão = {d}, multiplicação = {m}')
+print(f'soma = {s},subtração = {sub} divisão = {d}, multiplicação = {m}')
