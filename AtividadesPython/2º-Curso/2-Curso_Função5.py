@@ -35,22 +35,27 @@ def multiplicacao():
     print(f'Multiplicação = {a_int * b_int}')
 
 
-operador = input(
-    'Selecione seu operador: '
-    '\n+ Soma '
-    '\n- Subratração '
-    '\n/ Divisão '
-    '\n* Multiplicação '
-    'Selecione: '
-)
+while True:
+    operador = input(
+        'Selecione seu operador: '
+        '\n[+] Soma '
+        '\n[-] Subratração '
+        '\n[/] Divisão '
+        '\n[*] Multiplicação '
+        '\nSelecione: '
+    )
 
-if operador == '+':
-    soma()
-elif operador == '-':
-    subtracao()
-elif operador == '/':
-    divisao()
-elif operador == '*':
-    multiplicacao()
-else:
-    print('Digite um operador.')
+    if operador == '+':
+        soma()
+    elif operador == '-':
+        subtracao()
+    elif operador == '/':
+        divisao()
+    elif operador == '*':
+        multiplicacao()
+    else:
+        print('Digite um operador.')
+
+    sair = input('Deseja sair? [S]im ou [N]ão: ').lower().startswith('s')
+    if sair is True:
+        break
