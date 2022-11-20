@@ -1,5 +1,5 @@
 """
-Gerador 
+Gerador CPFs válidos 
 """
 import random
 

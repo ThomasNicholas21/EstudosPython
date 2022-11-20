@@ -2,37 +2,20 @@
 Função
 """
 
-
-def soma():
-    a = input('Digite o primeiro valor: ')
-    b = input('Digite o segundo valor: ')
-    a_int = int(a)
-    b_int = int(b)
-    print(f'Soma = {a_int + b_int}')
+def soma(a, b):
+    print(f'Soma = {a + b}')
 
 
-def subtracao():
-    a = input('Digite o primeiro valor: ')
-    b = input('Digite o segundo valor: ')
-    a_int = int(a)
-    b_int = int(b)
-    print(f'Subtração = {a_int - b_int}')
+def subtracao(a, b):
+    print(f'Subtração = {a - b}')
 
 
-def divisao():
-    a = input('Digite o primeiro valor: ')
-    b = input('Digite o segundo valor: ')
-    a_int = int(a)
-    b_int = int(b)
-    print(f'Divisão = {a_int / b_int}')
+def divisao(a, b):
+    print(f'Divisão = {a / b}')
 
 
-def multiplicacao():
-    a = input('Digite o primeiro valor: ')
-    b = input('Digite o segundo valor: ')
-    a_int = int(a)
-    b_int = int(b)
-    print(f'Multiplicação = {a_int * b_int}')
+def multiplicacao(a, b):
+    print(f'Multiplicação = {a * b}')
 
 
 while True:
@@ -45,14 +28,20 @@ while True:
         '\nSelecione: '
     )
 
+
+    a = input('Digite o primeiro valor: ')
+    b = input('Digite o segundo valor: ')
+    a_int = int(a)
+    b_int = int(b)
+    
     if operador == '+':
-        soma()
+        soma(a_int, b_int)
     elif operador == '-':
-        subtracao()
+        subtracao(a_int, b_int)
     elif operador == '/':
-        divisao()
+        divisao(a_int, b_int)
     elif operador == '*':
-        multiplicacao()
+        multiplicacao(a_int, b_int)
     else:
         print('Digite um operador.')
 

@@ -1,5 +1,5 @@
 """
-contador de letras
+contador de letras - DEVE SER REFATORADO
 """
 frase = input('Digite uma frase ou uma palavra qualquer: ')
 
