@@ -1,21 +1,25 @@
 """
 Função
 """
+import os
 
-def soma(a, b):
-    print(f'Soma = {a + b}')
-
-
-def subtracao(a, b):
-    print(f'Subtração = {a - b}')
+lista = []
 
 
-def divisao(a, b):
-    print(f'Divisão = {a / b}')
+def soma(*args):
+    return print(f'Subtração = {a_int + b_int}')
 
 
-def multiplicacao(a, b):
-    print(f'Multiplicação = {a * b}')
+def subtracao(*args):
+    return print(f'Subtração = {a_int - b_int}')
+
+
+def divisao(*args):
+    return print(f'Divisão = {a_int / b_int}')
+
+
+def multiplicacao(*args):
+    return print(f'Multiplicação = {a_int * b_int}')
 
 
 while True:
@@ -28,12 +32,11 @@ while True:
         '\nSelecione: '
     )
 
-
     a = input('Digite o primeiro valor: ')
     b = input('Digite o segundo valor: ')
     a_int = int(a)
     b_int = int(b)
-    
+
     if operador == '+':
         soma(a_int, b_int)
     elif operador == '-':
@@ -46,5 +49,10 @@ while True:
         print('Digite um operador.')
 
     sair = input('Deseja sair? [S]im ou [N]ão: ').lower().startswith('s')
+    os.system('cls')
     if sair is True:
         break
+    else:
+        lista.append(operador)
+
+print(lista)
