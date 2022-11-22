@@ -1,0 +1,45 @@
+Revisão Python
+Operadores lógicos 
+or, and e not
+
+Condicional
+If, elif e else: 
+
+Repetição
+while - else: - (Utilizado quando a condição da repetição
+passar a ser falsa)
+continue - pula um laço
+break - finaliza o laço
+for i in range(inicio:final:passo)
+
+vetor
+vetor: [0 for x in range(n)]
+matriz
+matriz: [[0 for x in range(n)]0 for x in range(m)]
+n-colunas
+m-linhas
+
+listas
+append-inserir no final da lista
+insert-inserir no começo da lista
+pop-remover o ultimo elemento da lista
+del-deleta um elemento ou uma fatia de elemento
+clear-limpar a lista
+extend-juntar duas listas
+max- maior valor da lista
+min- menor valor da lista
+split - dividir uma string
+join - juntar uma lista
+Enumerate - Enumerar elementos da lista
+sort - ordena componentes da lista forma crescente
+sort(reversed = True) - ordena de forma decrescente
+Create Read Update Delete (CRUD)
+copy - copia um valor de lista para outra lista
+
+funções
+Academicamente, os termos Higher Order Functions e First-Class Functions têm significados diferentes.
+
+Higher Order Functions - Funções que podem receber e/ou retornar outras funções
+
+First-Class Functions - Funções que são tratadas como outros tipos de dados comuns (strings, inteiros, etc...)
+
