@@ -43,3 +43,8 @@ Higher Order Functions - Funções que podem receber e/ou retornar outras funç�
 
 First-Class Functions - Funções que são tratadas como outros tipos de dados comuns (strings, inteiros, etc...)
 
+Dicionário
+O valor pode ser qualquer tipo, sendo eles :
+str, int, float, bool, tuple - imutaveis
+list, dict - mutaveis
+criar um Dicionário - {}
