@@ -37,24 +37,23 @@ for pergunta in perguntas:
 
     escolha = input('Escolha uma opção: ')
 
-    if escolha.isdigit():
-        escolha_int = int(escolha)
-
     acertou = False
     escolha_int = None
     qtd_opcoes = len(opcoes)
 
+    if escolha.isdigit():
+        escolha_int = int(escolha)
+
     if escolha_int is not None:
         if escolha_int >= 0 and escolha_int < qtd_opcoes:
-            if escolha_int == pergunta['Resposta']:
+            if opcoes[escolha_int] == pergunta['Resposta']:
                 acertou = True
 
-    print()
     if acertou:
         qtd_acertos += 1
-        print('Acertou!👍')
+        print('Acertou!')
     else:
-        print('Errou!❌')
+        print('Errou!')
 
     print()
 
