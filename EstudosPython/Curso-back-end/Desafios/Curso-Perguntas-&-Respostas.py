@@ -51,8 +51,11 @@ for pergunta in perguntas:
 
     print()
     if acertou:
-        print('Parabéns você acertou!')
+        qtd_acertos += 1
+        print('Acertou!👍')
     else:
-        print('Você errou!')
+        print('Errou!❌')
 
     print()
+
+print(f'Você acertou {qtd_acertos} de {len(perguntas)} perguntas!')
