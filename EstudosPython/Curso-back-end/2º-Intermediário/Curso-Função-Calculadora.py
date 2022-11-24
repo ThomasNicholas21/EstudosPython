@@ -1,24 +1,24 @@
 """
-Função
+Função - Calculadora, sem tratamento de erros
 """
 import os
 
 lista = []
 
 
-def soma(*args):
+def soma(a_int, b_int):
     return print(f'Subtração = {a_int + b_int}')
 
 
-def subtracao(*args):
+def subtracao(a_int, b_int):
     return print(f'Subtração = {a_int - b_int}')
 
 
-def divisao(*args):
+def divisao(a_int, b_int):
     return print(f'Divisão = {a_int / b_int}')
 
 
-def multiplicacao(*args):
+def multiplicacao(a_int, b_int):
     return print(f'Multiplicação = {a_int * b_int}')
 
 
