@@ -57,3 +57,17 @@ get - obtém uma chave
 pop - Apaga um item com a chave especificada (del)
 popitem - Apaga o último item adicionado
 update - Atualiza um dicionário com outro
+
+# Criando um set
+# set(iterável) ou {1, 2, 3}
+# s1 = set('Luiz')
+# s1 = set()  # vazio
+# s1 = {'Luiz', 1, 2, 3}  # com dados
+
+# Sets são eficientes para remover valores duplicados
+# de iteráveis.
+# - Seus valores serão sempre únicos;
+# - Não aceitam valores mutáveis;
+# - não tem índexes;
+# - não garantem ordem;
+# - são iteráveis (for, in, not in)
