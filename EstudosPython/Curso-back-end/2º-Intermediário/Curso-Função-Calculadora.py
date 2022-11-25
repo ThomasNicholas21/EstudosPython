@@ -1,5 +1,5 @@
 """
-Função
+Função - Calculadora sem tratamento de erro
 """
 import os
 
