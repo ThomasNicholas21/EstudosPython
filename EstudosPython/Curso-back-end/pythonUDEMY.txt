@@ -70,4 +70,4 @@ update - Atualiza um dicionário com outro
 # - Não aceitam valores mutáveis;
 # - não tem índexes;
 # - não garantem ordem;
-# - são iteráveis (for, in, not in)
+# - são iteráveis (for, in, not in)|||||
