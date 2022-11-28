@@ -71,3 +71,4 @@ update - Atualiza um dicionário com outro
 # - não tem índexes;
 # - não garantem ordem;
 # - são iteráveis (for, in, not in)|||||
+add, update, clear, discard
