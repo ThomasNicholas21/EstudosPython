@@ -11,5 +11,10 @@ trabalhando com set
 
 A = {1, 2, 3}
 B = {4, 2, 5}
-c = A | B 
+c = A | B  # Une dois sets
+d = A & B  # Itens que estáo em ambos
+e = A - B  # Mostra a diff entre os sets
+f = A ^ B  # itens que n estao em ambos
 print(c)
+print(d)
+print(f)
