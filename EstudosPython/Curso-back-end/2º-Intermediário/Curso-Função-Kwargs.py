@@ -5,7 +5,7 @@ Utilizando Kwargs como visto na aula
 
 def argumentos_nomeados(**kwargs):
     for chave, valor in kwargs.items():
-        print(chave, valor)
+        print(chave, valor, sep='-')
     print()
 
 
