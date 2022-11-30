@@ -18,11 +18,6 @@ perguntas = [
         'Opções': ['230', '140', '125', '120'],
         'Resposta': '120',
     },
-    {
-        'Pergunta': 'Quem tem a cabeça mais grande?',
-        'Opções': ['Jonathan', 'Andrade', 'Nelli', 'Thomas'],
-        'Resposta': 'Andrade',
-    },
 ]
 
 qtd_acertos = 0
