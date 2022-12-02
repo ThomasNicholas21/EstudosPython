@@ -13,6 +13,7 @@ try:
     print(c)
 except ZeroDivisionError as error:
     print('MSG: ', error.__class__.__name__)
+    print(error)
 
 except ValueError:
     print('Valor invalido')
