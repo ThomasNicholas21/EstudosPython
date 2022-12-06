@@ -1,6 +1,6 @@
 import copy
 
-from dados import produtos
+from dados_proposto import produtos
 
 # copy, sorted, produtos.sort
 # Exercícios
