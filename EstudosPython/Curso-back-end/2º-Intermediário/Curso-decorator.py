@@ -21,5 +21,7 @@ def e_string(param):
         raise TypeError('Parametro recebe apenas string')
  
 inverte_string_checando_param = criar_funcao(inverte_string) 
-string = int(input('Digite a palavra para ser invertida: '))
+string = input('Digite a palavra para ser invertida: ')
+#string = int(input('Digite a palavra para ser invertida: '))
+
 print(inverte_string_checando_param(string))
