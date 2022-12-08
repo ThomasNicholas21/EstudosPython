@@ -8,6 +8,8 @@
 # ['BA', 'SP', 'MG', 'RJ']
 # Resultado
 # [('Salvador', 'BA'), ('Ubatuba', 'SP'), ('Belo Horizonte', 'MG')]
+from itertools import zip_longest
+
 
 def zipar(l1, l2):
     intervalo = min(len(l1), len(l2))
@@ -17,3 +19,6 @@ lista1 = ['Anápolis', 'Gramados', 'Belo Horizonte']
 lista2 = ['GO', 'MG', 'RS', 'RJ']
 
 print(zipar(lista1, lista2))
+
+print(list(zip(lista1, lista2)))
+print(list(zip_longest(lista1, lista2)))
