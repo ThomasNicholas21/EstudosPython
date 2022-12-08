@@ -1,0 +1,1 @@
+from Exercício_dados.modulo_export import preenchedor_5, preenchedor_7, e_string
