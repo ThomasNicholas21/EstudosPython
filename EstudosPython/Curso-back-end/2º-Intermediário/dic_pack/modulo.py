@@ -1,27 +1,24 @@
-def abcd(args):
-    for arg in args:
-        return arg
-    
-   
+
+
 perguntas = [
     {
         'Pergunta': 'Em que ano foi o atentado das torres gêmeas?',
-        'Opções': ['2001', '2012', '2058', '2015'],
-        'Resposta': '2001',
+        'Opções': {'a': '2001', 'b': '2012', 'c': '2058', 'd': '2015'},
+        'Resposta': 'a',
     },
     {
         'Pergunta': 'Quanto é 12 x 12 ?',
-        'Opções': ['125', '147', '144', '124'],
-        'Resposta': '144',
+        'Opções': {'a': '125', 'b': '147', 'c': '144', 'd': '124'},
+        'Resposta': 'c',
     },
     {
         'Pergunta': 'Qual o penúltimo presidente do EUA ?',
-        'Opções': ['Obama', 'Bush', 'Trump', 'Biden'],
-        'Resposta': 'Obama',
+        'Opções': {'a': 'Obama', 'b': 'Bush', 'c': 'Trump', 'd': 'Biden'},
+        'Resposta': 'a',
     },
     {
         'Pergunta': 'Quem ganhou a copa do mundo de 2022 ?',
-        'Opções': ['França', 'Italia', 'Brasil', 'Espanha'],
-        'Resposta': 'Brasil',
+        'Opções': {'a': 'França', 'b': 'Italia', 'c': 'Brasil', 'd': 'Espanha'},
+        'Resposta': 'c',
     },
 ]

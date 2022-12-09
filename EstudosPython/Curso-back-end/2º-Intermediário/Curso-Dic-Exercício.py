@@ -1,4 +1,5 @@
-from dic_pack import perguntas, abcd
+from dic_pack import perguntas
+from os import system
 
 i = ['a', 'b', 'c', 'd']
 qtd_acerto = 0
@@ -7,12 +8,18 @@ for pergunta in perguntas:
     print()
 
     opcoes = pergunta['Opções']
-    for opcao in opcoes:
-        
+    for i, opcao in opcoes.items():
+        print(f'{i}) {opcao}')
     print()
 
     escolha = input('Escolha uma opção ')
 
     acertou = False
-    escolha = None
-    qtd_opcoes = len(opcoes)
+
+    if escolha == pergunta['Resposta']:
+        acertou = True
+    
+    if acertou:
+        print('Acertoou 🥳')
+    else:
+        print('Errou 😥')
