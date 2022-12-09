@@ -1,0 +1,1 @@
+from dic_pack.modulo import perguntas, abcd
