@@ -1,7 +1,6 @@
 from dic_pack import perguntas
 from os import system
 
-i = ['a', 'b', 'c', 'd']
 qtd_acerto = 0
 for pergunta in perguntas:
     print(pergunta['Pergunta'])
@@ -20,6 +19,9 @@ for pergunta in perguntas:
         acertou = True
     
     if acertou:
-        print('Acertoou 🥳')
+        qtd_acerto += 1
+        print('Acertoou 🥳\n')
     else:
-        print('Errou 😥')
+        print('Errou 😥\n')
+
+print(f'Parabéns, você acertou {qtd_acerto} de 4 perguntas')
