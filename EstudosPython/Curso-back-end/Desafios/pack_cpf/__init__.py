@@ -1,0 +1,1 @@
+from pack_cpf.modulo_cpf import validador_cpf

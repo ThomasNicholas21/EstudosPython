@@ -53,10 +53,12 @@ elif opcao2 == '4':
     '[2] Lista de 7 números\n'
     'Selecione: '
     )
+    system('cls')
 
     if opcao3 == '1':
         lista2 = preenchedor_5()
         system('cls')
+
     elif opcao3 == '2':
         lista2 = preenchedor_7()
         system('cls')
@@ -76,8 +78,18 @@ elif opcao2 == '4':
 
     if opcao4 == '1':
         lista_soma = [
-            l1 + l2 for l1,l2 in zip(lista1, lista2)
+            l1 + l2 for l1, l2 in zip(lista1, lista2)
         ]
         print(lista_soma)
+    elif opcao4 == '2':
+        lista_mult = [
+            l1 * l2 for l1, l2 in zip(lista1, lista2)
+        ]
+        print(lista_mult)
+    elif opcao4 == '3':
+        print(f'Suas listas: \n{lista1} e {lista2}')
+    else:
+        print('Voce nao selecionou o valor correspondente T_T ')
 
-
+else:
+    print('Voce nao selecionou o valor correspondente T_T ')
