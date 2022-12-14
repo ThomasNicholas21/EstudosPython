@@ -1,1 +1,2 @@
 from pack_cpf.modulo_cpf import validador_cpf
+from pack_cpf.modulo import apresentacao_dados
