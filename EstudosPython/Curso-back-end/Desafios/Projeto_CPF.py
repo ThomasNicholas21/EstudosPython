@@ -30,7 +30,7 @@ while True:
     
     print()
     acessar = input(
-        'Deseja acessar os dados armazenados? [S]im ou [N]ao:'
+        'Deseja acessar os dados armazenados? [S]im ou [N]ao: '
         ).lower().startswith('s')
     if acessar is True:
         apresentacao_dados(*armazenamento)
