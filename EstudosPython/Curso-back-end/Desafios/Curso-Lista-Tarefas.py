@@ -19,7 +19,7 @@ def refazer():
 
 def adicionar(tarefa, tarefas):
     tarefa = tarefa.strip()
-    if not tarefas:
+    if not tarefa:
         print('Isso não é uma tarefa.')
         return
     
@@ -31,15 +31,23 @@ tarefas_desfazer = []
 while True:
 
     print('Comandos: Listar, desfazer, refazer e sair.')
-    op = input('Digite a tarefa ou comando: ')
+    op = input('Digite a tarefa ou comando: ').lower()
 
-    if op == 'listar':
+    if op.isdigit():
+        print('Isso não é uma tarefa.')
+        print()
+        
+    elif op == 'listar':
         listar(tarefas)
+        
     elif op == 'desfazer':
         desfazer()
+
     elif op == 'refazer':
         refazer()
+
     elif op == 'sair':
         break
+    
     else:
         adicionar(op, tarefas)
