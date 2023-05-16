@@ -33,21 +33,31 @@ while True:
     print('Comandos: Listar, desfazer, refazer e sair.')
     op = input('Digite a tarefa ou comando: ').lower()
 
-    if op.isdigit():
-        print('Isso não é uma tarefa.')
-        print()
-        
-    elif op == 'listar':
-        listar(tarefas)
-        
-    elif op == 'desfazer':
-        desfazer()
+    comandos = {
+        'listar' : lambda: listar(tarefas),
+        'desfazer' : lambda: desfazer(),
+        'refazer' : lambda: refazer(),
+        'adicionar' : lambda: adicionar(op, tarefas),
+    }
 
-    elif op == 'refazer':
-        refazer()
+    comando = comandos.get(op) if comandos.get(op) is not None else \
+        comandos['adicionar']
+    comando()
+    # if op.isdigit():
+    #     print('Isso não é uma tarefa.')
+    #     print()
+        
+    # elif op == 'listar':
+    #     listar(tarefas)
+        
+    # elif op == 'desfazer':
+    #     desfazer()
 
-    elif op == 'sair':
+    # elif op == 'refazer':
+    #     refazer()
+
+    if op == 'sair':
         break
     
-    else:
-        adicionar(op, tarefas)
+    # else:
+    #     adicionar(op, tarefas)
