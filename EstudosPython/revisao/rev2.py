@@ -12,7 +12,7 @@ def subtracao(n1, n2):
 def div(n1, n2):
     div = n1 / n2
     if n2 == 0:
-        print("Divisao por zero!!!!!") 
+        return print("Divisao por zero!!!!!") 
     return print(div)
 
 def multiplicacao(n1, n2):
