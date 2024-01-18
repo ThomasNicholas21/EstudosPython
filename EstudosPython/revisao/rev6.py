@@ -2,8 +2,8 @@
 
 def validador(param):
     if param % 2 == 0:
-        return print(f"Valor '{param}' é par")
-    return print(f"Valor '{param}' é impar")
+        return f"Valor '{param}' é par"
+    return f"Valor '{param}' é impar"
 
 try:
     numero = int(input("Digite um número: "))
