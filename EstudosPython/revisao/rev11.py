@@ -86,7 +86,7 @@ print(list(dados.values()))
 
 print()
 print('Atualizando o dicinário com chaves eliminadas...')
-dados.update({
+dados.update({                           # atualiza seu dicinário
     'sobrenome': 'matias pedrosa',
     'idade' : 24,
 })
