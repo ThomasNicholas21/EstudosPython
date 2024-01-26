@@ -2,8 +2,8 @@
 
 lista = [
     numero
-    if numero % 2 == 0 else ''
     for numero in range(1,11)
+    if numero % 2 == 0
 ]
 
 print(*lista)
