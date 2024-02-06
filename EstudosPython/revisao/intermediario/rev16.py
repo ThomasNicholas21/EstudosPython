@@ -12,7 +12,7 @@ novos_produtos = [
     {**produto, 'preco' : round(produto['preco'] * 1.75, 2)} # realizando o mapeamento de dados com condicoes estabelecidas
     if produto['preco'] < 25 else {**produto} # tudo que esta a direita da repeticao, sera mapeamento de dado
     for produto in produtos
-    if produto['preco'] > 19
+    if produto['preco'] > 19 # filtrando por produtos maiores que 19, tudo a direita do for sera filtro
 ]
 
 print(*produtos, sep= '\n') # visualizando a primeira lista de produtos
