@@ -71,7 +71,12 @@ update - Atualiza um dicionário com outro
 # - não tem índexes;
 # - não garantem ordem;
 # - são iteráveis (for, in, not in)|||||
-add, update, clear, discard
+# - add, update, clear, discard
+# Operadores úteis:
+# união | união (union) - Une
+# intersecção & (intersection) - Itens presentes em ambos
+# diferença - Itens presentes apenas no set da esquerda
+# diferença simétrica ^ - Itens que não estão em ambos
 
 # Módulos padrão do Python (import, from, as e *)
 # https://docs.python.org/3/py-modindex.html
@@ -125,3 +130,7 @@ add, update, clear, discard
 # padrão
 # O python conhece todos os módulos e pacotes presentes
 # nos caminhos de sys.path
+
+# dir - mostra todos metodos do objeto
+# hasattr - verifica dinamicamente se tem um atributo
+# getattr - pega um atributo
