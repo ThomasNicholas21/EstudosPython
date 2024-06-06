@@ -2,7 +2,7 @@
 Atividade com módulo
 """
 import os
-from Curso1 import somar, subtrair, dividir, multiplicar
+from Curso1 import somar, subtrair, dividir, multiplicar # type: ignore
 
 armazenamento = []
 while True:   
