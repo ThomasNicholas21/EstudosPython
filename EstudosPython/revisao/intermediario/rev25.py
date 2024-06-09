@@ -11,6 +11,9 @@ from rev25_module import add_product, remove_product, find_product
 #print(*sys.path, sep='\n')
 
 stock = {}
+def mostra_dic(**kwargs):    
+    for chave, valor in kwargs.items():
+        print(chave, valor)
 
 # funcoes de um modulo de adicionar produtos da revisao 25
 add_product(stock, "apple", 12, 1)

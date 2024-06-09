@@ -1,1 +1,1 @@
-from rev26_package.modulo_func import add_task
+from rev26_package.modulo_func import add_task, remove_task, find_task
